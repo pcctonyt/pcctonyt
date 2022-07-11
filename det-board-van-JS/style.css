@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(80, 80, 50, 80);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+    background-color: lightyellow;
+    color: red;
+    font-size: 16pt;
+    font-family: "Lato", sans-serif;
+}
+
+.board-grid {
+    padding-top: 1em;
+    margin-top: 7.5em;
+    margin-bottom: 8em;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(8, auto);
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.square:nth-child(2),
+.square:nth-child(4),
+.square:nth-child(6),
+.square:nth-child(8),
+.square:nth-child(9),
+.square:nth-child(11),
+.square:nth-child(13),
+.square:nth-child(15),
+.square:nth-child(18),
+.square:nth-child(20),
+.square:nth-child(22),
+.square:nth-child(24),
+.square:nth-child(25),
+.square:nth-child(27),
+.square:nth-child(29),
+.square:nth-child(31),
+.square:nth-child(34),
+.square:nth-child(36),
+.square:nth-child(38),
+.square:nth-child(40),
+.square:nth-child(41),
+.square:nth-child(43),
+.square:nth-child(45),
+.square:nth-child(47),
+.square:nth-child(50),
+.square:nth-child(52),
+.square:nth-child(54),
+.square:nth-child(56),
+.square:nth-child(57),
+.square:nth-child(59),
+.square:nth-child(61),
+.square:nth-child(63){
+    background-color: rgba(255, 255, 255, .75);
+    color: black;
+    font-size: 3rem;
+}
+
+.square:nth-child(1),
+.square:nth-child(3),
+.square:nth-child(5),
+.square:nth-child(7),
+.square:nth-child(10),
+.square:nth-child(12),
+.square:nth-child(14),
+.square:nth-child(16),
+.square:nth-child(17),
+.square:nth-child(19),
+.square:nth-child(21),
+.square:nth-child(23),
+.square:nth-child(26),
+.square:nth-child(28),
+.square:nth-child(30),
+.square:nth-child(32),
+.square:nth-child(33),
+.square:nth-child(35),
+.square:nth-child(37),
+.square:nth-child(39),
+.square:nth-child(42),
+.square:nth-child(44),
+.square:nth-child(46),
+.square:nth-child(48),
+.square:nth-child(49),
+.square:nth-child(51),
+.square:nth-child(53),
+.square:nth-child(55),
+.square:nth-child(58),
+.square:nth-child(60),
+.square:nth-child(62),
+.square:nth-child(64){
+    background-color: rgba(0, 0, 0, .60);
+    color: white;
+    font-size: 3rem;
+}
+
+.player-heading {
+    text-align: center;
+    color: lightblue;
+}
+.game-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1em;
+
+}
+
+.btn-group {
+    padding: 10px;
+    margin: 3em;
+    border-radius: 7px;
+    color: blue;
+}
+
+.codes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
