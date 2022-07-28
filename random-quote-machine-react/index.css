@@ -1,0 +1,65 @@
+*, body, html, ::before, ::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 650px;
+    background: radial-gradient( black, rgb(231, 221, 221));
+    border-radius: 50%;
+    border: 3px solid green;
+    box-shadow: 10px 10px 5px rgb(206, 189, 189);
+}
+
+.quote {
+    padding: 1em 3em 1em 3em;
+    background-color: rgb(141, 110, 110);
+    border-radius: 50%;
+}
+.quote-btn{
+    margin: 2em .5em .5em 2em;
+    background-color: rgb(107, 8, 107);
+    color: cyan;
+    border-radius: 15px;
+    font-size: 16pt;
+}
+
+.quote-btn:hover{
+    margin: 2em .5em .5em 2em;
+    background-color: cyan;
+    color: rgb(107, 8, 107);
+    border-radius: 15px;
+}
+
+h2 {
+    color: rgb(248, 3, 248);
+    font-size: 18pt;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+a {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
